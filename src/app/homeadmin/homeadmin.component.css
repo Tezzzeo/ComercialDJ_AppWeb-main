@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    color: black;
+}
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin: 15px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}

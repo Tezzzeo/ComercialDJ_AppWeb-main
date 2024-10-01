@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="alert alert-dark">
+        <span class="titulo">Trabajadores</span><span class="subtitulo">{{titulo}}</span>
+      </div>
+        <form action="" method="post">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="codtrabajador" id="codtrabajador" placeholder='' [(ngModel)]="trabajadores.codtrabajador">
+                        <label for="codtrabajador">Codigo del Trabajador</label>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="nombretrabajador" id="nombretrabajador"  placeholder='' [(ngModel)]="trabajadores.nombretrabajador">
+                        <label for="nombretrabajador">Nombre del Trabajador</label>
+                      </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="direccion" id="direccion"  placeholder='' [(ngModel)]="trabajadores.direccion">
+                        <label for="direccion">Direccion del Trabajador</label>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" name="telefono" id="telefono"  placeholder='' [(ngModel)]="trabajadores.telefono">
+                        <label for="telefono">Telefono del Trabajador</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="correo" id="correo"  placeholder='' [(ngModel)]="trabajadores.correo">
+                        <label for="correo">Correo del Trabajador</label>
+                    </div>
+                </div>
+                <button class="btn btn-success form-control" role="button" (click)='create()'>Registrar</button>
+                <button class="btn btn-warning" role="button" (click)='update()'>Actualizar</button>
+            </div>
+        </form>
+    </div>
